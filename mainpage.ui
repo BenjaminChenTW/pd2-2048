@@ -1,20 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>MainPage</class>
- <widget class="QWidget" name="MainPage" >
-  <property name="geometry" >
+ <widget class="QWidget" name="MainPage">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>480</width>
+    <height>640</height>
    </rect>
   </property>
-  <property name="windowTitle" >
-   <string>MainPage</string>
+  <property name="maximumSize">
+   <size>
+    <width>480</width>
+    <height>640</height>
+   </size>
   </property>
+  <property name="windowTitle">
+   <string>2048</string>
+  </property>
+  <property name="inputMethodHints">
+   <set>Qt::ImhNone</set>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>481</width>
+     <height>641</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/MainPage.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="quitInGame">
+   <property name="geometry">
+    <rect>
+     <x>21</x>
+     <y>21</y>
+     <width>114</width>
+     <height>46</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/empty.png</normaloff>:/images/empty.png</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="backInGame">
+   <property name="geometry">
+    <rect>
+     <x>21</x>
+     <y>67</y>
+     <width>114</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/empty.png</normaloff>:/images/empty.png</iconset>
+   </property>
+  </widget>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
- <resources/>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
  <connections/>
 </ui>
