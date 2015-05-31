@@ -1,9 +1,7 @@
 <RCC>
     <qresource prefix="/images">
         <file>empty.png</file>
-        <file>EnterPage.jpg</file>
         <file>MainPage.jpg</file>
-        <file>QuitPage.jpg</file>
         <file alias="0">0.png</file>
         <file>icons/1.png</file>
         <file>icons/2.png</file>
