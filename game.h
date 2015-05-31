@@ -1,18 +1,22 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include <QWidget>
+#include <QObject>
+#include <QLabel>
 
-class Game : public QWidget
+class Game : public QObject
 {
     Q_OBJECT
 public:
-    explicit Game(QWidget *parent = 0);
+    explicit Game(QWidget *parent, int X, int Y);
     ~Game();
-
-signals:
-
-public slots:
+    void transform(int Value);
+    int getValue();
+private:
+    int x;
+    int y;
+    int value;
+    QLabel *pic;
 };
 
 #endif // GAME_H

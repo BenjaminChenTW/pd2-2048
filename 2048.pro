@@ -13,8 +13,16 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainpage.cpp
+        mainpage.cpp \
+    enterpage.cpp \
+    game.cpp
 
-HEADERS  += mainpage.h
+HEADERS  += mainpage.h \
+    enterpage.h \
+    game.h
 
-FORMS    += mainpage.ui
+FORMS    += mainpage.ui \
+    enterpage.ui
+
+RESOURCES += \
+    images.qrc
